@@ -5,7 +5,7 @@
 }
 .back {
     
-    background: url('images/login.jpg');
+    background: url("../images/login.jpg");
     height: 100vh;
 }
 

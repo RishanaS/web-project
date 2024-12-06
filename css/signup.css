@@ -22,7 +22,7 @@ body {
 
 .left-section {
     flex: 1;
-    background: url('images/signup.jpg') no-repeat center center;
+    background: url("../images/signup.jpg") no-repeat center center;
     background-size: cover;
     position: relative;
 }
