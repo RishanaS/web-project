@@ -6,7 +6,7 @@
 }
 
 body {
-    background: url("../images/whiteback.jpg");
+    background-image: url("../images/whiteback.jpg");
     background-size: 1000px;
 }
 
