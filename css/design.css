@@ -10,7 +10,7 @@ body, html {
 }
 
 .container {
-    background: url('images/background.jpg');
+    background: url('../background.jpg');
     background-size: 1350px;
     height: 100vh;
     display: flex;
