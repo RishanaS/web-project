@@ -12,7 +12,7 @@
         </div>
         <div class="right-section">
             <h2>Sign Up</h2>
-            <form>
+            <form action = "myfunc.php" method = "POST">
                 <label for="name">Full Name</label>
                 <input type="text" id="name" placeholder="Name...">
 
@@ -37,5 +37,19 @@
             </form>
         </div>
     </div>
+    <?php
+    require_once 'dbconf.php';	
+    require_once 'myfunc.php';	
+    if ($_SERVER['REQUEST_METHOD'] == "POST") {
+        //echo "Got the POST request from client";
+        
+            
+            $name = $_POST['name'];
+            $email = $_POST['email'];
+            $user_name = $_POST['user_name'];
+            $password = $_POST['password'];
+            AddSignupDetails($connect,$name,$email,$user_name,$password);
+}
+?>
 </body>
 </html>
