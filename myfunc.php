@@ -20,7 +20,7 @@ function AddSignupDetails($connect,$name,$email,$user_name,$password){
 
                 if ($result){
                     echo "New user record created successfully";
-                    printTable("students",$connect);
+        
                 }else{
                     die("Error".mysqli_error($connect));
                 }
@@ -29,7 +29,12 @@ function AddSignupDetails($connect,$name,$email,$user_name,$password){
 			    die($e->getMessage());
 	        }
 		}
+
+    
+
     ?>
+
+
     </body>
     </html>
     

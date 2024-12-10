@@ -48,8 +48,8 @@
 
             <!-- Password -->
             <div class="form-group">
-                <label for="customerPassword">Password</label>
-                <input type="password" id="customerPassword" name="customerPassword" placeholder="Create a password" required>
+                <label for="PhoneNumber">Password</label>
+                <input type="PhoneNumber" id="PhoneNumber" name="PhoneNumber" placeholder="Enter your phone number" required>
             </div>
 
             <!-- Upload Custom Design -->

@@ -27,9 +27,8 @@
     </nav>
     <section>
     <div class="container">
-        <h1>Create Designer Account</h1>
+        <h1>Designer's Area</h1>
         <form action="/create_account" method="post" enctype="multipart/form-data">
-            <!-- Designer Name -->
             <div class="form-group">
                 <label for="designerName">Designer Name</label>
                 <input type="text" id="designerName" name="designerName" placeholder="Enter your name" required>
@@ -46,8 +45,8 @@
 
 
             <div class="form-group">
-                <label for="designerPassword">Password</label>
-                <input type="password" id="designerPassword" name="designerPassword" placeholder="Create a password" required>
+                <label for="contactNumber">Password</label>
+                <input type="contactNumber" id="contactNumber" name="ContactNumber" placeholder="Enter your phonr number" required>
             </div>
 
             <div class="form-group">
