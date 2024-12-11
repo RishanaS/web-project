@@ -10,7 +10,7 @@ function logout() {
   sessionStorage.clear(); // Clear session storage completely
 
   // Redirect to login page
-  window.location.href = 'login.html';
+  window.location.href = 'loginpage.html';
 }
 
 // Execute logout on page load
