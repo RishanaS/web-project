@@ -1,6 +1,6 @@
 <?php
 
-	require_once 'dbconf.php';	
+	require_once 'dconf.php';	
 			
 function AddSignupDetails($connect,$name,$email,$user_name,$password){
 			try{
@@ -11,11 +11,12 @@ function AddSignupDetails($connect,$name,$email,$user_name,$password){
                 $result = mysqli_query($connect,$sql);
 
                 if ($result){
-                    echo "New user record created successfully";
+                    // echo "New user record created successfully";
         
                 }else{
                     die("Error".mysqli_error($connect));
                 }
+                // header('Location:../homepage.html');
 
 		    } catch(Exception $e){
 			    die($e->getMessage());
