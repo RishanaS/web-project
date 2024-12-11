@@ -1,3 +1,5 @@
+
+// Function to handle user logout
 function logout() {
   // Remove authentication tokens
   localStorage.removeItem('authToken'); // Assuming the token is stored in localStorage

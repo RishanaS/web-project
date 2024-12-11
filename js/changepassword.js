@@ -1,3 +1,5 @@
+// changePassword.js
+
 document.getElementById('changePasswordForm').addEventListener('submit', async (e) => {
     e.preventDefault(); // Prevent default form submission
   
@@ -49,3 +51,4 @@ document.getElementById('changePasswordForm').addEventListener('submit', async (
       console.error(err);
     }
   });
+  
