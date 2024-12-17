@@ -2,10 +2,10 @@
 
 require_once 'dbconf.php';
 
-function Getid($id,$connect){
+function Getuser_name($user_name,$connect){
 	try{
 	
-		$sql = "SELECT * FROM  user where  id = '$id' ";
+		$sql = "SELECT * FROM  user where  id = '$user_name' ";
 	
 	
 		$result = mysqli_query($connect,$sql);
@@ -43,7 +43,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             $_SESSION['user_id'] = (string) $user['_id'];
             $_SESSION['user_name'] = $user['name'];
             //echo "Login successful! Welcome, " . htmlspecialchars($user['name']) . ".";
-            header('Location: ../Students_dashboard.html'); 
+            header('/workspaces/web-project/homepage.html'); 
             exit;
         } else {
             echo "Invalid password.";
