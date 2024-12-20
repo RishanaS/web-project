@@ -1,58 +1,33 @@
 <?php
-
 require_once 'dbconf.php';
 
-function Getuser_name($user_name,$connect){
-	try{
-	
-		$sql = "SELECT * FROM  user where  id = '$user_name' ";
-	
-	
-		$result = mysqli_query($connect,$sql);
-	
-		if (mysqli_num_rows($result)>0) {
-	
-		$col = mysqli_fetch_fields($result);
-		
-			while($row = mysqli_fetch_assoc($result)){
-				
-			}
-		} 
-		else{
-			echo "No results"; 
-		}
-	
-		}
-	
-	
-	catch(Exception $e){
-		die($e->getMessage());
-	}
-}
+if (isset($_POST['login'])) {
+    $username = $_POST["user"];
+    $password = $_POST["password"];
+    
+    // Prepare the SQL query to fetch the username and hashed password
+    $sql = "SELECT username, password FROM user WHERE username = '$username'";
+    $result = $connect->query($sql);
 
+    if ($result->num_rows > 0) {
+        $row = $result->fetch_assoc();
+        $hashedPassword = $row["password"]; // Fetch the hashed password
 
-if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-    $email = $_POST['email'];
-    $password = $_POST['password'];
-
-    $user = $collection->findOne(['email' => $email]);
-
-    if ($user) {
-        if (password_verify($password, $user['password'])) {
-            session_start();
-            $_SESSION['user_id'] = (string) $user['_id'];
-            $_SESSION['user_name'] = $user['name'];
-            //echo "Login successful! Welcome, " . htmlspecialchars($user['name']) . ".";
-            header('/workspaces/web-project/homepage.html'); 
-            exit;
+        // Verify the password
+        if (password_verify($password, $hashedPassword)) {
+            session_start(); // Start the session
+            
+            $_SESSION["user_name"] = $row["username"]; // Save username in session
+            
+            header("Location: homepage.php");
+            exit; // Ensure no further code runs after redirection
         } else {
-            echo "Invalid password.";
+            echo '<p class="error-message">Invalid username or password.</p>';
         }
     } else {
-        echo "No user found with this email.";
+        echo '<p class="error-message">Invalid username or password.</p>';
     }
-} else {
-    echo "Invalid request.";
-}
 
+    $connect->close(); // Close the database connection
+}
 ?>
