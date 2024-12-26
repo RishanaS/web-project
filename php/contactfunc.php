@@ -2,7 +2,7 @@
 	require_once 'dconf.php';
 	function AddData($connect,$User_Name,$Email_Address,$Subject,$Comment){
 		try {
-        $sql = "INSERT INTO ContactUs VALUES('$User_Name','$Email_Address','$Subject','$Comment')";
+        $sql = "INSERT INTO contactus VALUES('$User_Name','$Email_Address','$Subject','$Comment')";
 			
 			$result = mysqli_query($connect,$sql);
 			if ($result) {
@@ -11,6 +11,7 @@
 				die("Error ".mysqli_error($connect));
 			}
             exit;
+			//header('Location:../contactuspage.html');
 		} catch (Exception $e) {
 			die($e->getMessage());
 		}
