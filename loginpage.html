@@ -15,13 +15,13 @@
             <form action="php/loginfunc.php" method="POST">
                 <div class="input-box">
                     <label for="username">Username:</label>
-                    <input type="text" placeholder="Username" required>
+                    <input type="text" name='user' placeholder="Username" required>
                 </div>
                 <div class="input-box">
                     <label for="password">Password:</label>
-                    <input type="password" placeholder="Password" required>
+                    <input type="password" name='password' placeholder="Password" required>
                 </div>
-                <button type="submit" class="login-btn"><a href="homepage.html">Login</a></button>
+                <button type="submit" name='login' class="login-btn">Login</button>
                 <a href="#" class="forgot-password">Forgot password?</a>
             </form>
             <div class="social-login">

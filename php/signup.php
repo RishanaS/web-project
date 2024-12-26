@@ -31,7 +31,9 @@ function AddSignupDetails($connect,$name,$email,$user_name,$password){
                 $email = $_POST['email'];
                 $user_name = $_POST['user_name'];
                 $password = $_POST['password'];
-                AddSignupDetails($connect,$name,$email,$user_name,$password);
+                $hashed_password = password_hash($password, PASSWORD_DEFAULT);
+
+                AddSignupDetails($connect,$name,$email,$user_name,$hashed_password);
     }
     
 ?>   
