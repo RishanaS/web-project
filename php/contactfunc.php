@@ -6,12 +6,13 @@
 			
 			$result = mysqli_query($connect,$sql);
 			if ($result) {
-				  echo "create Account sucessfully";
+				  //echo "create Account sucessfully";
 			} else {
 				die("Error ".mysqli_error($connect));
 			}
-            exit;
-			//header('Location:../contactuspage.html');
+            
+			header('Location:../contactuspage.html');
+			exit;
 		} catch (Exception $e) {
 			die($e->getMessage());
 		}
