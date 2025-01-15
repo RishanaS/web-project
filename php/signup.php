@@ -16,7 +16,7 @@ function AddSignupDetails($connect,$name,$email,$user_name,$password){
                 }else{
                     die("Error".mysqli_error($connect));
                 }
-                // header('Location:../homepage.html');
+                // header('Location:../homepage.php');
 
 		    } catch(Exception $e){
 			    die($e->getMessage());

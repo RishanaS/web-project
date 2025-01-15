@@ -11,7 +11,7 @@
 				die("Error ".mysqli_error($connect));
 			}
             
-			header('Location:../contactuspage.html');
+			header('Location:../contactuspage.php');
 			exit;
 		} catch (Exception $e) {
 			die($e->getMessage());

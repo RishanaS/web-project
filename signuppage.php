@@ -34,7 +34,7 @@
                     <label for="terms">I agree to the <a href="#">Terms of User</a></label>
                 </div>
                 <div class="error_message" id="error_message"></div>
-                <button type="submit" class="sign-up-btn" ><a href="homepage.html" >Sign Up</a></button>
+                <button type="submit" class="sign-up-btn" ><a href="homepage.php" >Sign Up</a></button>
             </form>
         </div>
     </div>

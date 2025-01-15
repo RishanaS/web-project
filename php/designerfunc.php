@@ -11,7 +11,7 @@
 				die("Error ".mysqli_error($connect));
 			}
             exit;
-			//header('Location:../designerpage.html');
+			//header('Location:../designerpage.php');
 		} catch (Exception $e) {
 			die($e->getMessage());
 		}

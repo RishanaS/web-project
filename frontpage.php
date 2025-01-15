@@ -12,8 +12,8 @@
             <div class="content">
                 <h1>DRESSIFY</h1>
                 <p> Fashion Designing</p>
-                <button class="btn sign"><a href="signuppage.html">Sign Up</a></button>
-                <button class="btn sign"><a href="loginpage.html">Log In</a></button>
+                <button class="btn sign"><a href="signuppage.php">Sign Up</a></button>
+                <button class="btn sign"><a href="loginpage.php">Log In</a></button>
             </div>
         </div>
     </div>

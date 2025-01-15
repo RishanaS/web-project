@@ -8,7 +8,7 @@
 <body>
     <h1>Dressify</h1><br><br>
 
-    <a href="frontpage.html">Front Page</a><br>
+    <a href="frontpage.php">Front Page</a><br>
 
 
     

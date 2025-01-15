@@ -13,15 +13,15 @@
         <img src="images/logo.jpg" style="width:80px; height: 60px;">
         <div class="logo">Dressify</div>
         <ul>
-            <li><a href="#"><a href="homepage.html">Home</a></a></li>
-            <li><a href="#"><a href="categories.html">Categories</a></a></li>
-            <li><a href="#"><a href="designerpage.html">Designer's Area</a></a></li>
-            <li><a href="#"><a href="customerpage.html">Customer's Area</a></a></li>
-            <li><a href="#"><a href="contactuspage.html">Contact Us</a></a></li>
-            <li><a href="#"><a href="feedback.html">Feedback</a></a></li>
+            <li><a href="#"><a href="homepage.php">Home</a></a></li>
+            <li><a href="#"><a href="categories.php">Categories</a></a></li>
+            <li><a href="#"><a href="designerpage.php">Designer's Area</a></a></li>
+            <li><a href="#"><a href="customerpage.php">Customer's Area</a></a></li>
+            <li><a href="#"><a href="contactuspage.php">Contact Us</a></a></li>
+            <li><a href="#"><a href="feedback.php">Feedback</a></a></li>
         </ul>
         <div class="account-cart">
-            <a href="#"><a href="myaccountpage.html">My account</a></a>
+            <a href="#"><a href="myaccountpage.php">My account</a></a>
         
         </div>
     </nav>
