@@ -30,9 +30,9 @@
   
       <h1>Account Settings</h1>
       <ul>
-        <li><a href="logout.html" class="logout-button">Logout</a></li>
-        <li><a href="changepassword.html">Change Password</a></li>
-        <li><a href="updateemail.html">Update Email</a></li>
+        <li><a href="logout.php" class="logout-button">Logout</a></li>
+        <li><a href="changepassword.php">Change Password</a></li>
+        <li><a href="updateemail.php">Update Email</a></li>
       </ul>
   </div>
 </div>

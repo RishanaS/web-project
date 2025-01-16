@@ -48,7 +48,7 @@
                 <label for="designercontactnumber">Contact Number</label>
                 <input type="contactNumber" id="designercontactNumber" name="designercontactNumber" placeholder="Enter your phone number" required>
             </div>
-
+    
             <div class="form-group">
                 <label for="designUpload">Upload Design</label>
                 <input type="file" id="designUpload" name="designUpload" accept="image/*" required>
