@@ -2,11 +2,11 @@
 require_once 'dconf.php';
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-    $name = $_POST['designerName'];
-    $bio = $_POST['designerBio'];
-    $email = $_POST['designerEmail'];
-    $phoneno = $_POST['designercontactNumber'];
-    $image = $_FILES['designUpload'];
+    $name = $_POST['customerName'];
+    $bio = $_POST['customerBio'];
+    $email = $_POST['customerEmail'];
+    $phoneno = $_POST['customerPhoneNumber'];
+    $image = $_FILES['customDesignUpload'];
 
     if ($image['error'] === 0) {
         $imageName = uniqid() . "-" . basename($image['name']);
