@@ -30,8 +30,8 @@
         <div class="content">
             <h2>GET TRENDY ITEMS TO  <br>UPGRADE STYLE</h2>
             <div class="buttons">
-                <a href="#" class="btn">Women</a>
-                <a href="#" class="btn">Men</a>
+                <a href="#" class="btn">Designers</a>
+                <a href="#" class="btn">Customers</a>
             </div>
         </div>
         <div class="images">
