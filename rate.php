@@ -75,20 +75,9 @@
 </head>
 <body>
   <h1>Rate Your Experience</h1>
-  <form action="/submit-rating" method="POST">
-    <label for="rating">How would you rate our service?</label>
-    <div class="rating">
-      <input type="radio" id="star5" name="rating" value="5">
-      <label for="star5">&#9733;</label>
-      <input type="radio" id="star4" name="rating" value="4">
-      <label for="star4">&#9733;</label>
-      <input type="radio" id="star3" name="rating" value="3">
-      <label for="star3">&#9733;</label>
-      <input type="radio" id="star2" name="rating" value="2">
-      <label for="star2">&#9733;</label>
-      <input type="radio" id="star1" name="rating" value="1">
-      <label for="star1">&#9733;</label>
-    </div>
+  <form action="php/feedbackfunc.php" method="POST">
+  <input type="text" placeholder="Username" name='username' required>
+  <input type="email" placeholder="Email" name='email' required>
 
     <label for="feedback">Tell us more about your experience (optional):</label>
     <textarea id="feedback" name="feedback" placeholder="Share your thoughts here..."></textarea>
