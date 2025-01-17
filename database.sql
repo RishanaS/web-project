@@ -29,9 +29,9 @@ SET time_zone = "+00:00";
 
 create table user(name varchar(100) not null,email varchar(100) not null,user_name varchar(100) primary key not null,password varchar(255) not null);
 --
--- Dumping data for table `educator`
+-- Dumping data for table `user`
 --
-INSERT INTO `user` (`name`, `email`, 'usernsme',`password`) VALUES
+INSERT INTO `user` (`name`, `email`, `usernsme`,`password`) VALUES
 ('shana', 'MAIL@gmail.com', 'a','$2y$10$RGk4jOV6.XqZsi6aPghwe.p6AcQj1jX5Xye3sJCk8uADKUnuspIay '),
 ('siri', 'srujsrjk@gmail.com ', 'd','$2y$10$aumVcEbGk5cz1AYoPAm6g.fLNTdjaEdg2OtueeP1NnAniSqPf7jne');
 -- --------------------------------------------------------
@@ -42,13 +42,14 @@ INSERT INTO `user` (`name`, `email`, 'usernsme',`password`) VALUES
 
 create table contactus(username varchar(100) primary key not null,email varchar(100) not null,subject varchar(255) not null,message text not null);
 --
--- Dumping data for table `learner`
+-- Dumping data for table `contactus`
 --
-
+INSERT INTO `contactus` (`username`, `email`, `subject`,`message`) VALUES
+('g', 'shhffvnm@gmail.com', 'jtEJK ','rhdztk grsuhe5tuaou9035789276 ');
 -- --------------------------------------------------------
 
 --
--- Table structure for table `contactus`
+-- Table structure for table `Designers`
 --
 CREATE TABLE Designers (
     id INT AUTO_INCREMENT PRIMARY KEY,
@@ -62,12 +63,12 @@ CREATE TABLE Designers (
 
 
 --
--- Dumping data for table `learner`
+-- Dumping data for table `Designers`
 --
 -- --------------------------------------------------------
 
 --
--- Table structure for table `contactus`
+-- Table structure for table `Customers`
 --
 CREATE TABLE Customers (
     id INT AUTO_INCREMENT PRIMARY KEY,
@@ -79,7 +80,7 @@ CREATE TABLE Customers (
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 --
--- Dumping data for table `learner`
+-- Dumping data for table `Customers`
 --
 
 
